@@ -1,0 +1,146 @@
+.reportContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: var(--space-2xl) var(--space-lg);
+}
+
+.reportHeader {
+  text-align: center;
+  margin-bottom: var(--space-2xl);
+}
+
+.reportTitle {
+  font-size: 1.75rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, var(--text-primary), var(--accent-primary));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: var(--space-sm);
+}
+
+.reportMeta {
+  font-size: 0.78rem;
+  color: var(--text-tertiary);
+}
+
+.reportBackLink {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-lg);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+}
+
+.reportBackLink:hover {
+  color: var(--text-primary);
+}
+
+.reportSection {
+  background: var(--bg-card);
+  border: 1px solid var(--bg-glass-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-lg);
+  margin-bottom: var(--space-md);
+  backdrop-filter: blur(20px);
+}
+
+.reportSectionTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-md);
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.executiveSummary {
+  font-size: 0.92rem;
+  color: var(--text-secondary);
+  line-height: 1.8;
+  padding: var(--space-md);
+  background: rgba(108, 92, 231, 0.05);
+  border-left: 3px solid var(--accent-primary);
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+}
+
+.reportTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.82rem;
+}
+
+.reportTable th {
+  text-align: left;
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-tertiary);
+  font-weight: 600;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.reportTable td {
+  padding: var(--space-sm) var(--space-md);
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.reportTable tr:last-child td {
+  border-bottom: none;
+}
+
+.reportTable tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.riskItem {
+  padding: var(--space-sm) var(--space-md);
+  margin-bottom: var(--space-sm);
+  border-radius: var(--radius-md);
+  font-size: 0.82rem;
+}
+
+.riskHigh {
+  background: rgba(225, 112, 85, 0.08);
+  border-left: 3px solid var(--accent-danger);
+}
+
+.riskMedium {
+  background: rgba(253, 203, 110, 0.08);
+  border-left: 3px solid var(--accent-warning);
+}
+
+.riskLow {
+  background: rgba(0, 184, 148, 0.08);
+  border-left: 3px solid var(--accent-success);
+}
+
+.riskTitle {
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: 4px;
+}
+
+.riskDesc {
+  color: var(--text-secondary);
+}
+
+.reportActions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  margin-top: var(--space-xl);
+}
+
+.loadingReport {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: var(--space-2xl);
+  gap: var(--space-md);
+  color: var(--text-secondary);
+}
