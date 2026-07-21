@@ -1,14 +1,3 @@
 {
-  "version": 2,
-  "framework": "nextjs",
-  "builds": [
-    {
-      "src": "package.json",
-      "use": "@vercel/next"
-    }
-  ],
-  "routes": [
-    { "handle": "filesystem" }
-  ],
-  "regions": ["bom1", "sin1"]
+  "regions": ["bom1"]
 }
